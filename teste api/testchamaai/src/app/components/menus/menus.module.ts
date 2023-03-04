@@ -15,6 +15,7 @@ import { MenusPage } from './menus.page';
     IonicModule,
     MenusPageRoutingModule
   ],
+  exports: [MenusPage],
   declarations: [MenusPage]
 })
 export class MenusPageModule {}
