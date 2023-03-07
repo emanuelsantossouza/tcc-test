@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { MenusPageRoutingModule } from './menus-routing.module';
-import { MenusPage } from './menus.page';
+
+import { LoginPage } from './login.page';
+import { ExploreContainerComponentModule } from 'src/app/explore-container/explore-container.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MenusPageRoutingModule
+    ExploreContainerComponentModule
   ],
-  exports: [MenusPage],
-  declarations: [MenusPage]
+  declarations: [LoginPage]
 })
-export class MenusPageModule {}
+export class LoginPageModule {}

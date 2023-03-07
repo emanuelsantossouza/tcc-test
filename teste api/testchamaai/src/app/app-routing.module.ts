@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'menus',
-    loadChildren: () => import('./components/menus/menus.module').then( m => m.MenusPageModule)
+    loadChildren: () => import('./components/menus/menus.module').then(m => m.MenusPageModule)
   },
 ];
 @NgModule({
@@ -17,4 +17,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
