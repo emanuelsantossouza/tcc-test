@@ -13,7 +13,7 @@ export class MenusPage implements OnInit {
     { title: 'Favoritos', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Ajuda', url: '/folder/Favorites', icon: 'information' },
     { title: 'Sobre nós', url: '/folder/Favorites', icon: 'people' },
-    { title: 'Fale com nós', url: '/folder/Favorites', icon: 'chatbubbles' },
+    { title: 'Fale Conosco', url: '/folder/Favorites', icon: 'chatbubbles' },
   ];
 
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
