@@ -1,19 +1,43 @@
 <ion-content color="amareloclaro" [fullscreen]="true">
-  <div>
+  <div class="imgLogo">
     <img src="../assets/img/logoChamaai.png" alt="">
   </div>
 
 
 <div class="formulario">
   <h5>E-Mail ou Usuário:</h5>
-  <ion-item>
+  <ion-item color="amareloclaro" lines="none">
     <ion-input></ion-input>
   </ion-item>
 
-  <h5>E-Mail ou Usuário:</h5>
-  <ion-item>
+  <h5>Senha:</h5>
+  <ion-item color="amareloclaro" lines="none">
     <ion-input></ion-input>
   </ion-item>
+
+  <h6>Esqueci a senha</h6>
+
+  <ion-button color="amarelo" shape="round" class="ion-align-self-center">Entrar</ion-button>
+
+  <div class="ou">
+    <h6>_________</h6>
+    <h6>Ou</h6>
+    <h6>_________</h6>
+  </div>
+
+  <div class="botaoLogin">
+    <div class="google">
+      <app-explore-container></app-explore-container>
+    </div>
+
+    <div class="face">
+      <img src="https://img.icons8.com/small/512/facebook-new.png" alt="">
+    </div>
+
+    <div class="email">
+      <img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" alt="">
+    </div>
+  </div>
 </div>
-  
+
 </ion-content>
