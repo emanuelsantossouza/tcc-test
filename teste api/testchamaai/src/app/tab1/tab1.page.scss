@@ -1,0 +1,17 @@
+ion-header{
+    border-bottom: 1px solid #E4A200;
+}
+
+ion-searchbar{
+    margin-top: 5px;
+
+   border-radius: 40px;
+}
+
+ion-searchbar.custom {
+    --color: #fff;
+    --placeholder-color: rgb(0, 0, 0);
+    --icon-color: rgb(226, 164, 30);
+  
+    --border-radius: 20px;
+}
