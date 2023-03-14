@@ -1,33 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
-ion-header{
-    border-bottom: 1px solid #E4A200;
+
+ion-content {
+  padding: 5px;
 }
 
-ion-searchbar{
-    margin-top: 5px;
-
-   border-radius: 40px;
+ion-header {
+  border-bottom: 1px solid #E4A200;
 }
 
-ion-searchbar.custom {
-    --color: #fff;
-    --placeholder-color: rgb(0, 0, 0);
-    --icon-color: rgb(226, 164, 30);
 
-    --border-radius: 20px;
-}
 
-.avatarCarrocel
-{
-  display: flex;
-  justify-content: space-around;
-}
 
-.motoristaTitulo{
+
+.motoristaTitulo {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
 
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+.stories {
+  margin-bottom: 0;
+  padding: 10px;
+
+  ion-img {
+    width: 75px;
+    height: 75px;
+
+  }
+
+  ion-img::part(image) {
+    border-radius: 65%;
+    border: 1px solid rgb(187, 55, 55);
+  }
+}
+
+ion-card {
+  width: 100%;
+  height: auto;
+
+  padding: 0;
+  margin-left: -1px;
+
+  border-radius: 40px;
+  align-items: center;
+
+}
+
+ion-card-content {
+  display: flex;
+
+  ion-avatar {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 20px;
+    margin-left: 2px;
+    padding: 10px;
+  }
+
 }

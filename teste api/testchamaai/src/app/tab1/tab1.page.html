@@ -7,43 +7,81 @@
         <ion-menu-button color="branco"></ion-menu-button>
       </ion-buttons>
 
-      <ion-searchbar class="custom" color="branco" animated="true" placeholder="João"></ion-searchbar>
+      <app-navbar></app-navbar>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content class="ion-padding">
-
-    <h6>Motorista Disponiveis:</h6>
-    <div class="avatarCarrocel">
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-    </div>
+  <ion-content>
 
 
-    <ion-card>
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
+    <h6 class="motoristaTitulo">Motorista Disponíveis:</h6>
+
+
+    <ion-slides class="stories" [options]="slidesOptions">
+      <ion-slide>
+        <ion-img alt="Silhouette of a person's head"
+          src="https://projetandopessoas.com.br/wp-content/uploads/2015/01/unnamed5.jpg"></ion-img>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-avatar>
+          <ion-img alt="Silhouette of a person's head"
+            src="https://i.pinimg.com/736x/01/8a/0b/018a0bbfa85be5d0313040fb58e428c5.jpg"></ion-img>
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <ion-img alt="Silhouette of a person's head"
+            src="http://projetandopessoas.com.br/wp-content/uploads/2018/02/gilmar-carneiro-300x283.jpg"></ion-img>
+        </ion-avatar>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-avatar>
+          <ion-img alt="Silhouette of a person's head"
+            src="https://storage.googleapis.com/adm-portal.appspot.com/_assets/modules/members/member_259522.jpg"></ion-img>
+        </ion-avatar>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-avatar>
+          <ion-img alt="Silhouette of a person's head"
+            src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+        </ion-avatar>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-card class="ion-text-center" color="amareloclaro">
       <ion-card-header>
-        <ion-card-title>Card Title</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Sedes:</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <ion-avatar>
+                <ion-img alt="Silhouette of a person's head"
+                  src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+              </ion-avatar>
+              <ion-avatar>
+                <ion-img alt="Silhouette of a person's head"
+                  src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+              </ion-avatar>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-avatar>
+                <ion-img alt="Silhouette of a person's head"
+                  src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+              </ion-avatar>
+              <ion-avatar>
+                <ion-img alt="Silhouette of a person's head"
+                  src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+              </ion-avatar>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-card-content>
     </ion-card>
 

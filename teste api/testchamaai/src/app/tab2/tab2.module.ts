@@ -6,6 +6,7 @@ import { Tab2Page } from './tab2.page';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { MenusPageModule } from '../components/menus/menus.module';
+import { NavbarPageModule } from '../components/navbar/navbar.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { MenusPageModule } from '../components/menus/menus.module';
     CommonModule,
     FormsModule,
     Tab2PageRoutingModule,
-    MenusPageModule
+    MenusPageModule,
+    NavbarPageModule
   ],
   declarations: [Tab2Page]
 })

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ViewChildren } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -7,19 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  public appPages = [
-    { title: 'Historicos de corridas', url: '/folder/Spam', icon: 'time' },
-    { title: 'Configurações', url: '/folder/Spam', icon: 'cog' },
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
-  ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+ 
 
-
-  constructor() {}
-
+  public slidesOptions: any = { slidesPerView: 3, spaceBetween: 10, freeModel: true}
 }
